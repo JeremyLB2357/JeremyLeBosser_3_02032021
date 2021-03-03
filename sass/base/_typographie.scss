@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../public/police/Roboto-Regular.ttf')
+}
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('../../public/police/Shrikhand-Regular.ttf')
+}
+* {
+    font-family: Roboto;
+}
+.logo, h1 {
+    font-family: Shrikhand;
+}
