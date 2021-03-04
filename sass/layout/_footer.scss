@@ -1,5 +1,5 @@
 footer {
-    background-color: #353535;
+    background-color: $footer-bg-color;
     color: white;
     padding: 1rem 0 2rem 1rem;
     margin-bottom: 0;
@@ -15,14 +15,13 @@ footer {
     }
     li {
         list-style: none;
-        background-color: cornflowerblue;
         margin-bottom: 0.5rem;
     }
 }
 
 .icone__footer {
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     font-size: 1rem;
     width: 1rem;
 
