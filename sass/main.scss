@@ -1,3 +1,11 @@
-p {
-    color: blue;
-}
+/*importation de tous les partiels sass*/
+@import "./utils/variables";
+/*fonctions*/
+/*mixins*/
+/*placeholders*/
+@import "./base/typographie";
+/*composants*/
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/accueil";
+/*fin de l'importation des partiels sass*/
