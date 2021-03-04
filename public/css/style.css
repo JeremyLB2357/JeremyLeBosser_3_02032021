@@ -121,13 +121,14 @@ footer li {
   box-shadow: inset 0.5rem 1rem 3rem #FF79DA, 0.2rem 0.2rem 0.2rem #bebebe;
 }
 
-.bloc-fonctionnement h1 {
-  margin-left: 1rem;
+.bloc-fonctionnement {
+  width: 100%;
+  padding-left: 1rem;
 }
 .bloc-fonctionnement ol {
   list-style: none;
   counter-reset: li;
-  padding-left: 1.75rem;
+  padding-left: 0.75rem;
 }
 .bloc-fonctionnement ol li::before {
   content: counter(li);
@@ -140,7 +141,7 @@ footer li {
   border-radius: 2rem;
   font-family: roboto-regular;
   position: relative;
-  right: 0.8rem;
+  right: 0.75rem;
 }
 .bloc-fonctionnement ol li {
   counter-increment: li;
@@ -148,12 +149,63 @@ footer li {
   margin-bottom: 1rem;
   display: inline-block;
   line-height: 4.5rem;
-  width: 90%;
+  width: 19rem;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
 }
 .bloc-fonctionnement .fonctionnement__texte {
   margin-left: 1rem;
+}
+
+.bloc-restaurant {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  background-color: #EFEFEF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.bloc-restaurant .restaurant {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
+  position: relative;
+}
+.bloc-restaurant .restaurant__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 11rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 1rem;
+}
+.bloc-restaurant .restaurant__texte {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.bloc-restaurant h2, .bloc-restaurant p {
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  margin-top: 0rem;
+}
+.bloc-restaurant .restaurant__icone {
+  grid-column-start: 2;
+  grid-row: 1/span 2;
+  margin: auto;
+}
+.bloc-restaurant .tag_nouveau {
+  background-color: #99E2D0;
+  color: #2b806c;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  position: absolute;
+  top: 1rem;
+  left: 15rem;
+  font-family: roboto-bold;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
 }
 
 /*fin de l'importation des partiels sass*/

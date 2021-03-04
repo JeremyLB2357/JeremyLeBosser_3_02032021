@@ -1,3 +1,7 @@
 @mixin box-shadow {
     box-shadow: 0.2rem 0.2rem 0.2rem rgb(190, 190, 190);
 }
+
+@mixin alignement-gen {
+    padding-left: 1rem;
+}
