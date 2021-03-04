@@ -62,6 +62,16 @@ footer li {
   margin-bottom: 0.5rem;
 }
 
+.icone__footer {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1rem;
+  width: 1rem;
+}
+.icone__footer--petit {
+  font-size: 0.8rem;
+}
+
 /*fin de l'importation des partiels sass*/
 
 /*# sourceMappingURL=style.css.map */
