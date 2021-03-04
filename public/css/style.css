@@ -42,6 +42,26 @@ header .logo {
   margin-top: 0;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem 0 2rem 1rem;
+  margin-bottom: 0;
+}
+footer .logo {
+  font-weight: inherit;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  background-color: cornflowerblue;
+  margin-bottom: 0.5rem;
+}
+
 /*fin de l'importation des partiels sass*/
 
 /*# sourceMappingURL=style.css.map */
