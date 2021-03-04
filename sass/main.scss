@@ -1,11 +1,11 @@
 /*importation de tous les partiels sass*/
 @import "./utils/variables";
 /*fonctions*/
-/*mixins*/
+@import "./utils/mixins";
 /*placeholders*/
 @import "./base/body";
 @import "./base/typographie";
-/*composants*/
+@import "./components/icones";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./pages/accueil";

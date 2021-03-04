@@ -1,0 +1,18 @@
+.icone {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    width: 1rem;
+
+    &--petit {
+        font-size: 0.8rem;
+    }
+
+    &--gris {
+        color: grey;
+    }
+
+    &--couleur-primaire {
+        color: $couleur-primaire;
+    }
+}

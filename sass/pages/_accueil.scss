@@ -43,3 +43,43 @@
         }
     }
 }
+
+.bloc-fonctionnement {
+    h1 {
+        margin-left: 1rem;
+    }
+
+    ol {
+        list-style: none;
+        counter-reset: li;
+        padding-left: 1.75rem;
+
+        li::before {
+            content: counter(li);
+            color: white;
+            background-color: $couleur-primaire;
+            display: inline-block;
+            width: 1.5rem;
+            line-height: 1.5rem;
+            text-align: center;
+            border-radius: 2rem;
+            font-family: roboto-regular;
+            position: relative;
+            right: 0.8rem;
+        }
+        li {
+            counter-increment: li;
+            background-color: $section-bg-color;
+            margin-bottom: 1rem;
+            display: inline-block;
+            line-height: 4.5rem;
+            width: 90%;
+            border-radius: 1rem;
+            @include box-shadow;
+        }
+    }
+
+    .fonctionnement__texte {
+        margin-left: 1rem;
+    }
+}
