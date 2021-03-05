@@ -25,12 +25,23 @@ body {
   font-family: Roboto-light;
 }
 
-.logo {
+.logo, .carte__titre {
   font-family: Shrikhand;
 }
 
-h1, h2, h3, .fonctionnement__texte {
+h1, h2, .fonctionnement__texte {
   font-family: Roboto-bold;
+}
+
+h3 {
+  font-family: Roboto-regular;
+  font-size: 1rem;
+}
+
+.menu__titre {
+  font-family: Roboto-light;
+  font-size: 1rem;
+  font-weight: unset;
 }
 
 html {
@@ -51,6 +62,25 @@ html {
 }
 .icone--couleur-primaire {
   color: #9356DC;
+}
+
+.btn {
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 3rem;
+  min-width: 10rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  background-color: #9356DC;
+  padding: 0 1.5rem 0 1.5rem;
+  font-family: Roboto-regular;
+  box-shadow: inset 0.5rem 1rem 3rem #FF79DA, 0.2rem 0.2rem 0.2rem #bebebe;
+}
+
+.btn__commander {
+  text-align: center;
+  padding-bottom: 5rem;
 }
 
 header .logo {
@@ -78,6 +108,62 @@ footer ul {
 footer li {
   list-style: none;
   margin-bottom: 0.5rem;
+}
+
+.carte__photo {
+  width: 100%;
+  height: 17rem;
+  background-color: red;
+}
+.carte__photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carte__titre {
+  margin-left: 0.5rem;
+}
+
+.menu {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: #EFEFEF;
+}
+.menu__titre {
+  margin-left: 0.5rem;
+}
+
+.plat {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-row-gap: 0.2rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.8rem 0 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
+}
+.plat__titre, .plat__texte, .plat__prix {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.plat__prix {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  text-align: center;
+  font-family: Roboto-bold;
+}
+.plat__texte {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  font-size: 0.9rem;
+}
+.plat__icone {
+  display: none;
+  grid-column-start: 3;
+  grid-row: 1/span 2;
+  margin: auto;
 }
 
 .bloc-description {

@@ -17,11 +17,20 @@
 * {
     font-family: Roboto-light;
 }
-.logo {
+.logo, .carte__titre {
     font-family: Shrikhand;
 }
-h1, h2, h3, .fonctionnement__texte {
+h1, h2, .fonctionnement__texte {
     font-family: Roboto-bold;
+}
+h3 {
+    font-family: Roboto-regular;
+    font-size: 1rem;
+}
+.menu__titre {
+    font-family: Roboto-light;
+    font-size: 1rem;
+    font-weight: unset;
 }
 html {
     font-size: 100%;
