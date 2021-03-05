@@ -1,5 +1,213 @@
-p {
-  color: blue;
+/*importation de tous les partiels sass*/
+/*fonctions*/
+/*placeholders*/
+body {
+  margin: 0;
 }
+
+@font-face {
+  font-family: "Roboto-light";
+  src: url("../../public/police/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../../public/police/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../../public/police/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../../public/police/Shrikhand-Regular.ttf");
+}
+* {
+  font-family: Roboto-light;
+}
+
+.logo {
+  font-family: Shrikhand;
+}
+
+h1, h2, h3, .fonctionnement__texte {
+  font-family: Roboto-bold;
+}
+
+html {
+  font-size: 100%;
+}
+
+.icone {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  width: 1rem;
+}
+.icone--petit {
+  font-size: 0.8rem;
+}
+.icone--gris {
+  color: grey;
+}
+.icone--couleur-primaire {
+  color: #9356DC;
+}
+
+header .logo {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem 0 2rem 1rem;
+  margin-bottom: 0;
+}
+footer .logo {
+  font-weight: inherit;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.bloc-description {
+  display: flex;
+  flex-direction: column;
+}
+.bloc-description .localisation {
+  background-color: #EAEAEA;
+  line-height: 3rem;
+  text-align: center;
+  font-family: Roboto-bold;
+  color: #353535;
+  margin: 0;
+  box-shadow: inset 0 0.1rem 0.2rem #bebebe;
+}
+.bloc-description div {
+  display: flex;
+  flex-direction: column;
+  background-color: #EFEFEF;
+  text-align: center;
+  height: 18rem;
+}
+.bloc-description div .description__titre {
+  display: inline-block;
+  margin: 3rem 4rem 0 4rem;
+}
+.bloc-description div .description__texte {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.bloc-description div .description__btn {
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  background-color: #9356DC;
+  padding: 0 1.5rem 0 1.5rem;
+  font-family: Roboto-regular;
+  box-shadow: inset 0.5rem 1rem 3rem #FF79DA, 0.2rem 0.2rem 0.2rem #bebebe;
+}
+
+.bloc-fonctionnement {
+  width: 100%;
+  padding-left: 1rem;
+}
+.bloc-fonctionnement ol {
+  list-style: none;
+  counter-reset: li;
+  padding-left: 0.75rem;
+}
+.bloc-fonctionnement ol li::before {
+  content: counter(li);
+  color: white;
+  background-color: #9356DC;
+  display: inline-block;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 2rem;
+  font-family: roboto-regular;
+  position: relative;
+  right: 0.75rem;
+}
+.bloc-fonctionnement ol li {
+  counter-increment: li;
+  background-color: #EFEFEF;
+  margin-bottom: 1rem;
+  display: inline-block;
+  line-height: 4.5rem;
+  width: 19rem;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
+}
+.bloc-fonctionnement .fonctionnement__texte {
+  margin-left: 1rem;
+}
+
+.bloc-restaurant {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  background-color: #EFEFEF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.bloc-restaurant .restaurant {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
+  position: relative;
+}
+.bloc-restaurant .restaurant__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 11rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 1rem;
+}
+.bloc-restaurant .restaurant__texte {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.bloc-restaurant h2, .bloc-restaurant p {
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  margin-top: 0rem;
+}
+.bloc-restaurant .restaurant__icone {
+  grid-column-start: 2;
+  grid-row: 1/span 2;
+  margin: auto;
+}
+.bloc-restaurant .tag_nouveau {
+  background-color: #99E2D0;
+  color: #2b806c;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  position: absolute;
+  top: 1rem;
+  left: 15rem;
+  font-family: roboto-bold;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+}
+
+/*fin de l'importation des partiels sass*/
 
 /*# sourceMappingURL=style.css.map */

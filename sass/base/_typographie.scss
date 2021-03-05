@@ -1,5 +1,13 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto-light';
+    src: url('../../public/police/Roboto-Light.ttf')
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('../../public/police/Roboto-Bold.ttf')
+}
+@font-face {
+    font-family: 'Roboto-regular';
     src: url('../../public/police/Roboto-Regular.ttf')
 }
 @font-face {
@@ -7,8 +15,14 @@
     src: url('../../public/police/Shrikhand-Regular.ttf')
 }
 * {
-    font-family: Roboto;
+    font-family: Roboto-light;
 }
-.logo, h1 {
+.logo {
     font-family: Shrikhand;
+}
+h1, h2, h3, .fonctionnement__texte {
+    font-family: Roboto-bold;
+}
+html {
+    font-size: 100%;
 }

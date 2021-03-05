@@ -1,0 +1,20 @@
+footer {
+    background-color: $footer-bg-color;
+    color: white;
+    padding: 1rem 0 2rem 1rem;
+    margin-bottom: 0;
+
+    .logo {
+        font-weight: inherit;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 0.5rem;
+    }
+}
