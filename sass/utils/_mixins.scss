@@ -8,12 +8,10 @@
 
 @mixin structure-plat {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
     grid-row-gap: 0.2rem;
     background-color: white;
-    border-radius: 1rem;
     padding: 0.8rem 0 0.5rem 0.5rem;
-    margin-bottom: 1rem;
     @include box-shadow;
 
     &__titre, &__texte, &__prix {
@@ -21,7 +19,7 @@
         margin-top: 0rem;
     }
     &__prix {
-        grid-column-start: 2;
+        grid-column-start: 3;
         grid-row-start: 2;
         text-align: center;
         font-family: Roboto-bold;
@@ -33,9 +31,13 @@
     }
 
     &__icone {
-        display: none;
+    
         grid-column-start: 3;
         grid-row: 1 / span 2;
         margin: auto;
     }
 }
+/* fonction à ajouter pour les menus
+margin-bottom: 1rem;
+border-radius: 1rem;
+*/

@@ -1,5 +1,10 @@
+@charset "UTF-8";
 /*importation de tous les partiels sass*/
 /*fonctions*/
+/* fonction à ajouter pour les menus
+margin-bottom: 1rem;
+border-radius: 1rem;
+*/
 /*placeholders*/
 body {
   margin: 0;
@@ -136,20 +141,20 @@ footer li {
 
 .plat {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   grid-row-gap: 0.2rem;
   background-color: white;
-  border-radius: 1rem;
   padding: 0.8rem 0 0.5rem 0.5rem;
-  margin-bottom: 1rem;
   box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 .plat__titre, .plat__texte, .plat__prix {
   margin-bottom: 0rem;
   margin-top: 0rem;
 }
 .plat__prix {
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-row-start: 2;
   text-align: center;
   font-family: Roboto-bold;
@@ -160,7 +165,6 @@ footer li {
   font-size: 0.9rem;
 }
 .plat__icone {
-  display: none;
   grid-column-start: 3;
   grid-row: 1/span 2;
   margin: auto;
@@ -193,18 +197,6 @@ footer li {
 .bloc-description div .description__texte {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-.bloc-description div .description__btn {
-  margin: auto;
-  margin-top: 1.5rem;
-  height: 3rem;
-  border-radius: 2rem;
-  border: none;
-  color: white;
-  background-color: #9356DC;
-  padding: 0 1.5rem 0 1.5rem;
-  font-family: Roboto-regular;
-  box-shadow: inset 0.5rem 1rem 3rem #FF79DA, 0.2rem 0.2rem 0.2rem #bebebe;
 }
 
 .bloc-fonctionnement {
@@ -251,13 +243,11 @@ footer li {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.bloc-restaurant .restaurant {
-  padding-bottom: 1rem;
+.bloc-restaurant .restaurant__container {
   margin-bottom: 1rem;
   border-radius: 1rem;
   margin-right: 1rem;
   background-color: white;
-  box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
   position: relative;
 }
 .bloc-restaurant .restaurant__photo {
@@ -265,24 +255,43 @@ footer li {
   width: 100%;
   height: 11rem;
   border-radius: 1rem 1rem 0 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
-.bloc-restaurant .restaurant__texte {
+
+.restaurant {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-row-gap: 0.2rem;
+  background-color: white;
+  padding: 0.8rem 0 0.5rem 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
+  border-radius: 0 0 1rem 1rem;
 }
-.bloc-restaurant h2, .bloc-restaurant p {
-  font-size: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 0;
+.restaurant__titre, .restaurant__texte, .restaurant__prix {
+  margin-bottom: 0rem;
   margin-top: 0rem;
 }
-.bloc-restaurant .restaurant__icone {
-  grid-column-start: 2;
+.restaurant__prix {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  text-align: center;
+  font-family: Roboto-bold;
+}
+.restaurant__texte {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  font-size: 0.9rem;
+}
+.restaurant__icone {
+  grid-column-start: 3;
   grid-row: 1/span 2;
   margin: auto;
 }
-.bloc-restaurant .tag_nouveau {
+.restaurant__titre {
+  font-size: 1rem;
+}
+
+.tag_nouveau {
   background-color: #99E2D0;
   color: #2b806c;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;

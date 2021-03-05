@@ -28,19 +28,6 @@
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
         }
-
-        .description__btn {
-            margin: auto;
-            margin-top: 1.5rem;
-            height: 3rem;
-            border-radius: 2rem;
-            border: none;
-            color: white;
-            background-color: $couleur-primaire;
-            padding: 0 1.5rem 0 1.5rem;
-            font-family: Roboto-regular;
-            box-shadow: inset 0.5rem 1rem 3rem $couleur-secondaire, 0.2rem 0.2rem 0.2rem rgb(190, 190, 190);
-        }
     }
 }
 
@@ -92,13 +79,11 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    .restaurant {
-        padding-bottom: 1rem;
+    .restaurant__container {
         margin-bottom: 1rem;
         border-radius: 1rem;
         margin-right: 1rem;
         background-color: white;
-        @include box-shadow;
         position: relative;
     }
 
@@ -107,34 +92,24 @@
         width: 100%;
         height: 11rem;
         border-radius: 1rem 1rem 0 0;
-        margin-bottom: 1rem;
-    }
-
-    .restaurant__texte {
-        display: grid;
-        grid-template-columns: 4fr 1fr;
-    }
-    h2, p {
+        margin-bottom: 0rem;
+    } 
+}
+.restaurant {
+    @include structure-plat;
+    border-radius: 0 0 1rem 1rem;
+    &__titre {
         font-size: 1rem;
-        margin-left: 1rem;
-        margin-bottom: 0;
-        margin-top: 0rem;
     }
-    .restaurant__icone {
-        grid-column-start: 2;
-        grid-row: 1 / span 2;
-        margin: auto;
-    }
-    .tag_nouveau {
-        background-color: #99E2D0;
-        color: #2b806c;
-        padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-        position: absolute;
-        top: 1rem;
-        left: 15rem;
-        font-family: roboto-bold;
-        font-size: 0.9rem;
-        border-radius: 0.2rem;
-    }
-    
+}
+.tag_nouveau {
+    background-color: #99E2D0;
+    color: #2b806c;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    position: absolute;
+    top: 1rem;
+    left: 15rem;
+    font-family: roboto-bold;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
 }
