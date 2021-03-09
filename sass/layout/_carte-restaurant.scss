@@ -2,21 +2,24 @@
     width: 100%;
     height: 17rem;
     background-color: red;
-    
+    margin-bottom: -4rem;
+    position: relative;
+    z-index: -1;
     img {
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
 }
-.carte__titre {
+.nom-restaurant {
     margin-left: 0.5rem;
 }
 .menu {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     background-color: $section-bg-color;
-    
+    border-radius: 2rem 2rem 0 0;
+    padding-top: 0.5rem;
 
     &__titre {
         margin-left: 0.5rem;

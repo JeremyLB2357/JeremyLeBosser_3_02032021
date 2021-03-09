@@ -25,9 +25,11 @@
         font-family: Roboto-bold;
     }
     &__texte {
-        grid-column-start: 1;
+        grid-column: 1 / span 2;
         grid-row-start: 2;
         font-size: 0.9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__icone {
