@@ -4,29 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/icone/css/all.css">
     <title>Menu - À la française</title>
 </head>
 <body>
     <header>
-        <p>ohmyfood</p>
+        <p class="logo">ohmyfood</p>
     </header>
     <main>
-        <section>
-            <h1>À la française</h1>
-        </section>
-        <section>
-            <h2>ENTRÉES</h2>
-            <div>
-                <p>Tartare de poulpe acidulé Aux zsets d'orange</p>
-                <p>25€</p>
+        <div class="carte__photo"><img src="./public/images/a_la_francaise.jpg" alt="Photo d'un plat" /></div>
+        
+        <section class="menu"> 
+            <h1 class="nom-restaurant">À la française</h1>   
+            <h2 class="menu__titre">ENTRÉES</h2>
+            <div class="plat">
+                <h3 class="plat__titre">Tartare de poulpe acidulé</h3>
+                <p class="plat__texte">Aux zestes d'orange</p>
+                <p class="plat__prix">25€</p>
             </div>
-            <h2>PLATS</h2>
-            <h2>DESSERTS</h2>
-            <button>Commander</button>
+            <div class="plat">
+                <h3 class="plat__titre">Velouté de légumes d'antan</h3>
+                <p class="plat__texte">Carotte, panais, topinambour</p>
+                <p class="plat__prix">35€</p>
+            </div>
+            <div class="plat">
+                <h3 class="plat__titre">Soupe à l'oignon</h3>
+                <p class="plat__texte">Revisitée</p>
+                <p class="plat__prix">20€</p>
+            </div>
+            <h2 class="menu__titre">PLATS</h2><div class="plat">
+                <h3 class="plat__titre">Coquilles Saint-Jacques</h3>
+                <p class="plat__texte">Accompagnée d'une purée de panais</p>
+                <p class="plat__prix">40€</p>
+            </div>
+            <div class="plat">
+                <h3 class="plat__titre">Magret de canard</h3>
+                <p class="plat__texte">Et parmentier de pommes de terres</p>
+                <p class="plat__prix">35€</p>
+            </div>
+            <div class="plat">
+                <h3 class="plat__titre">Pigeonneau d'Ille-et-Vilaine</h3>
+                <p class="plat__texte">Sur son lit de gnocchis aux légumes</p>
+                <p class="plat__prix">44€</p>
+            </div>
+            <h2 class="menu__titre">DESSERTS</h2>
+            <div class="plat">
+                <h3 class="plat__titre">Pétales de violettes glacés</h3>
+                <p class="plat__texte">Et purée de noisettes</p>
+                <p class="plat__prix">18€</p>
+            </div>
+            <div class="plat">
+                <h3 class="plat__titre">Fondant au chocolat</h3>
+                <p class="plat__texte">Revisité</p>
+                <p class="plat__prix">22€</p>
+            </div>
+            <div class="plat">
+                <h3 class="plat__titre">Millefeuille croustillant</h3>
+                <p class="plat__texte">Myrtilles et pâte d'amande</p>
+                <p class="plat__prix">23€</p>
+            </div>
+            <div class="btn__commander">
+                <button class="btn">Commander</button>
+            </div>
         </section>
     </main>
     <footer>
-        <p>pied de page de l'accueil</p>
+        <h2 class="logo">ohmyfood</h2>
+        <ul>
+            <li>
+                <span class="icone"><i class="fas fa-utensils"></i></span>
+                <span>Proposer un restaurant</span>
+            </li>
+            <li>
+                <span class="icone icone--petit"><i class="fas fa-hands-helping"></i></span>
+                <span>Devenir partenaire</span>
+            </li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+        </ul>
     </footer>
 </body>
 </html>

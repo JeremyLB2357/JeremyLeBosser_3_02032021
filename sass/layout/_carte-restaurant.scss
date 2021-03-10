@@ -1,0 +1,31 @@
+.carte__photo {
+    width: 100%;
+    height: 17rem;
+    margin-bottom: -4rem;
+    position: relative;
+    z-index: -1;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+.nom-restaurant {
+    margin-left: $menu-vertical-align;
+}
+.menu {
+    padding: $menu-vertical-align $menu-vertical-align 0 $menu-vertical-align;
+    background-color: $section-bg-color;
+    border-radius: 2rem 2rem 0 0;
+    
+
+    &__titre {
+        margin-left: $menu-vertical-align;
+    }
+}
+
+.plat {
+    @include structure-plat;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}

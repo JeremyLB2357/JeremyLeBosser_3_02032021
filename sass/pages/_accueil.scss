@@ -6,40 +6,25 @@
         background-color: #EAEAEA;
         line-height: 3rem;
         text-align: center;
-        font-family: Roboto-bold;
         color: $footer-bg-color;
         margin: 0; 
         box-shadow: inset 0 0.1rem 0.2rem rgb(190, 190, 190);
     }
 
-    div {
+    .restaurant__description {
         display: flex;
         flex-direction: column;
         background-color: $section-bg-color;
         text-align: center;
-        height: 18rem;
+        padding-bottom: $section-margintop;
 
         .description__titre {
-            display: inline-block;
-            margin: 3rem 4rem 0 4rem;
+            margin: $section-margintop 4rem 0 4rem;
         }
 
         .description__texte {
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
-        }
-
-        .description__btn {
-            margin: auto;
-            margin-top: 1.5rem;
-            height: 3rem;
-            border-radius: 2rem;
-            border: none;
-            color: white;
-            background-color: $couleur-primaire;
-            padding: 0 1.5rem 0 1.5rem;
-            font-family: Roboto-regular;
-            box-shadow: inset 0.5rem 1rem 3rem $couleur-secondaire, 0.2rem 0.2rem 0.2rem rgb(190, 190, 190);
         }
     }
 }
@@ -47,11 +32,17 @@
 .bloc-fonctionnement {
     width: 100%;
     @include alignement-gen;
+    padding-bottom: $section-margintop;
+
+    h1 {
+        margin-top: $section-margintop;
+        margin-bottom: 0rem;
+    }
 
     ol {
         list-style: none;
         counter-reset: li;
-        padding-left: 0.75rem;
+        padding-left: $fonctionnement-counter-size/2;
         
 
         li::before {
@@ -59,18 +50,18 @@
             color: white;
             background-color: $couleur-primaire;
             display: inline-block;
-            width: 1.5rem;
-            line-height: 1.5rem;
+            width: $fonctionnement-counter-size;
+            line-height: $fonctionnement-counter-size;
             text-align: center;
-            border-radius: 2rem;
+            border-radius: $fonctionnement-counter-size;
             font-family: roboto-regular;
             position: relative;
-            right: 0.75rem;
+            right: $fonctionnement-counter-size/2;
         }
         li {
             counter-increment: li;
             background-color: $section-bg-color;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
             display: inline-block;
             line-height: 4.5rem;
             width: 19rem;
@@ -89,16 +80,16 @@
     flex-direction: column;
     @include alignement-gen;
     background-color: $section-bg-color;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: $section-margintop;
 
-    .restaurant {
-        padding-bottom: 1rem;
+    h1 {
+        margin-top: $section-margintop;
+    }
+    .restaurant__container {
         margin-bottom: 1rem;
         border-radius: 1rem;
         margin-right: 1rem;
         background-color: white;
-        @include box-shadow;
         position: relative;
     }
 
@@ -107,34 +98,24 @@
         width: 100%;
         height: 11rem;
         border-radius: 1rem 1rem 0 0;
-        margin-bottom: 1rem;
-    }
-
-    .restaurant__texte {
-        display: grid;
-        grid-template-columns: 4fr 1fr;
-    }
-    h2, p {
+        margin-bottom: 0rem;
+    } 
+}
+.restaurant {
+    @include structure-plat;
+    border-radius: 0 0 1rem 1rem;
+    &__titre {
         font-size: 1rem;
-        margin-left: 1rem;
-        margin-bottom: 0;
-        margin-top: 0rem;
     }
-    .restaurant__icone {
-        grid-column-start: 2;
-        grid-row: 1 / span 2;
-        margin: auto;
-    }
-    .tag_nouveau {
-        background-color: #99E2D0;
-        color: #2b806c;
-        padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-        position: absolute;
-        top: 1rem;
-        left: 15rem;
-        font-family: roboto-bold;
-        font-size: 0.9rem;
-        border-radius: 0.2rem;
-    }
-    
+}
+.tag_nouveau {
+    background-color: #99E2D0;
+    color: #2b806c;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    position: absolute;
+    top: 1rem;
+    left: 15rem;
+    font-family: roboto-bold;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
 }
