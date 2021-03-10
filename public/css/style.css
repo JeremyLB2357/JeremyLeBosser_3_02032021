@@ -91,6 +91,37 @@ html {
   padding-bottom: 5rem;
 }
 
+.btn-heart {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  outline: unset;
+  /*supprimer les bordures lors du click*/
+}
+.btn-heart .heart-global {
+  font-size: 1.2rem;
+}
+.btn-heart .heart-border {
+  color: black;
+  font-size: 1.5rem;
+  position: relative;
+  top: 0.2rem;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.btn-heart .heart-background {
+  color: #9356DC;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.btn-heart:hover .heart-border, .btn-heart:focus .heart-border {
+  opacity: 0;
+}
+.btn-heart:hover .heart-background, .btn-heart:focus .heart-background {
+  opacity: 1;
+}
+
 header .logo {
   text-align: center;
   font-size: 2rem;

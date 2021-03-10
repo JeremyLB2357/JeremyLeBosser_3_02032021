@@ -20,3 +20,36 @@
     text-align: center;
     padding-bottom: 5rem;
 }
+
+.btn-heart {
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    outline: unset;     /*supprimer les bordures lors du click*/
+
+    .heart-global {
+        font-size: 1.2rem;
+    }
+    .heart-border {
+        color: black;
+        font-size: 1.5rem;
+        position: relative;
+        top: 0.2rem;
+        transition: opacity 0.5s;
+        opacity: 1;
+    }
+    .heart-background {
+        color: $couleur-primaire;
+        font-size: 1.5rem;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    &:hover, &:focus {
+        .heart-border {
+            opacity: 0;
+        }
+        .heart-background {
+            opacity: 1;
+        }
+    }
+}
