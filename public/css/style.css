@@ -34,7 +34,7 @@ body {
   font-family: Shrikhand;
 }
 
-h1, h2, .fonctionnement__texte {
+h1, h2, .fonctionnement__texte, .localisation {
   font-family: Roboto-bold;
 }
 
@@ -70,8 +70,7 @@ html {
 }
 
 .btn {
-  margin: auto;
-  margin-top: 1.5rem;
+  margin: 1.5rem auto 0 auto;
   height: 3rem;
   min-width: 10rem;
   border-radius: 2rem;
@@ -118,7 +117,6 @@ footer li {
 .carte__photo {
   width: 100%;
   height: 17rem;
-  background-color: red;
   margin-bottom: -4rem;
   position: relative;
   z-index: -1;
@@ -134,11 +132,9 @@ footer li {
 }
 
 .menu {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
   background-color: #EFEFEF;
   border-radius: 2rem 2rem 0 0;
-  padding-top: 0.5rem;
 }
 .menu__titre {
   margin-left: 0.5rem;
@@ -185,23 +181,21 @@ footer li {
   background-color: #EAEAEA;
   line-height: 3rem;
   text-align: center;
-  font-family: Roboto-bold;
   color: #353535;
   margin: 0;
   box-shadow: inset 0 0.1rem 0.2rem #bebebe;
 }
-.bloc-description div {
+.bloc-description .restaurant__description {
   display: flex;
   flex-direction: column;
   background-color: #EFEFEF;
   text-align: center;
-  height: 18rem;
+  padding-bottom: 3rem;
 }
-.bloc-description div .description__titre {
-  display: inline-block;
+.bloc-description .restaurant__description .description__titre {
   margin: 3rem 4rem 0 4rem;
 }
-.bloc-description div .description__texte {
+.bloc-description .restaurant__description .description__texte {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -209,6 +203,11 @@ footer li {
 .bloc-fonctionnement {
   width: 100%;
   padding-left: 1rem;
+  padding-bottom: 3rem;
+}
+.bloc-fonctionnement h1 {
+  margin-top: 3rem;
+  margin-bottom: 0rem;
 }
 .bloc-fonctionnement ol {
   list-style: none;
@@ -223,7 +222,7 @@ footer li {
   width: 1.5rem;
   line-height: 1.5rem;
   text-align: center;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   font-family: roboto-regular;
   position: relative;
   right: 0.75rem;
@@ -231,7 +230,7 @@ footer li {
 .bloc-fonctionnement ol li {
   counter-increment: li;
   background-color: #EFEFEF;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   display: inline-block;
   line-height: 4.5rem;
   width: 19rem;
@@ -247,8 +246,10 @@ footer li {
   flex-direction: column;
   padding-left: 1rem;
   background-color: #EFEFEF;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+.bloc-restaurant h1 {
+  margin-top: 3rem;
 }
 .bloc-restaurant .restaurant__container {
   margin-bottom: 1rem;

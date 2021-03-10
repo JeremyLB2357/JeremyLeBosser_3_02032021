@@ -1,7 +1,6 @@
 .carte__photo {
     width: 100%;
     height: 17rem;
-    background-color: red;
     margin-bottom: -4rem;
     position: relative;
     z-index: -1;
@@ -12,17 +11,16 @@
     }
 }
 .nom-restaurant {
-    margin-left: 0.5rem;
+    margin-left: $menu-vertical-align;
 }
 .menu {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: $menu-vertical-align $menu-vertical-align 0 $menu-vertical-align;
     background-color: $section-bg-color;
     border-radius: 2rem 2rem 0 0;
-    padding-top: 0.5rem;
+    
 
     &__titre {
-        margin-left: 0.5rem;
+        margin-left: $menu-vertical-align;
     }
 }
 

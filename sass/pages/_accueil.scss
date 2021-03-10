@@ -6,22 +6,20 @@
         background-color: #EAEAEA;
         line-height: 3rem;
         text-align: center;
-        font-family: Roboto-bold;
         color: $footer-bg-color;
         margin: 0; 
         box-shadow: inset 0 0.1rem 0.2rem rgb(190, 190, 190);
     }
 
-    div {
+    .restaurant__description {
         display: flex;
         flex-direction: column;
         background-color: $section-bg-color;
         text-align: center;
-        height: 18rem;
+        padding-bottom: $section-margintop;
 
         .description__titre {
-            display: inline-block;
-            margin: 3rem 4rem 0 4rem;
+            margin: $section-margintop 4rem 0 4rem;
         }
 
         .description__texte {
@@ -34,11 +32,17 @@
 .bloc-fonctionnement {
     width: 100%;
     @include alignement-gen;
+    padding-bottom: $section-margintop;
+
+    h1 {
+        margin-top: $section-margintop;
+        margin-bottom: 0rem;
+    }
 
     ol {
         list-style: none;
         counter-reset: li;
-        padding-left: 0.75rem;
+        padding-left: $fonctionnement-counter-size/2;
         
 
         li::before {
@@ -46,18 +50,18 @@
             color: white;
             background-color: $couleur-primaire;
             display: inline-block;
-            width: 1.5rem;
-            line-height: 1.5rem;
+            width: $fonctionnement-counter-size;
+            line-height: $fonctionnement-counter-size;
             text-align: center;
-            border-radius: 2rem;
+            border-radius: $fonctionnement-counter-size;
             font-family: roboto-regular;
             position: relative;
-            right: 0.75rem;
+            right: $fonctionnement-counter-size/2;
         }
         li {
             counter-increment: li;
             background-color: $section-bg-color;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
             display: inline-block;
             line-height: 4.5rem;
             width: 19rem;
@@ -76,9 +80,11 @@
     flex-direction: column;
     @include alignement-gen;
     background-color: $section-bg-color;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: $section-margintop;
 
+    h1 {
+        margin-top: $section-margintop;
+    }
     .restaurant__container {
         margin-bottom: 1rem;
         border-radius: 1rem;
