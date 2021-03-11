@@ -28,4 +28,24 @@
     @include structure-plat;
     margin-bottom: 1rem;
     border-radius: 1rem;
+    
+}
+
+.list-menu {
+    margin-top: 2rem;
+}
+$presentation-plat__duration: 2s;
+@mixin animation-plat($delay: 0s) {
+    animation: presentation-plat $presentation-plat__duration $delay backwards;
+}
+@for $i from 1 through 3 {
+    .list-#{$i} {
+        $delay: $i * 2s;
+        $delay-plat: $delay + 1s;
+        @include animation-plat($delay);
+
+        .plat {
+            @include animation-plat($delay-plat);
+        }
+    }
 }

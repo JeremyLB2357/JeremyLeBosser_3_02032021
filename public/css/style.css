@@ -27,6 +27,16 @@
     opacity: 0;
   }
 }
+@keyframes presentation-plat {
+  0% {
+    opacity: 0;
+    transform: translate(0, 2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 /*placeholders*/
 body {
   margin: 0;
@@ -274,6 +284,31 @@ footer li {
   grid-column-start: 3;
   grid-row: 1/span 2;
   margin: auto;
+}
+
+.list-menu {
+  margin-top: 2rem;
+}
+
+.list-1 {
+  animation: presentation-plat 2s 2s backwards;
+}
+.list-1 .plat {
+  animation: presentation-plat 2s 3s backwards;
+}
+
+.list-2 {
+  animation: presentation-plat 2s 4s backwards;
+}
+.list-2 .plat {
+  animation: presentation-plat 2s 5s backwards;
+}
+
+.list-3 {
+  animation: presentation-plat 2s 6s backwards;
+}
+.list-3 .plat {
+  animation: presentation-plat 2s 7s backwards;
 }
 
 .bloc-description {

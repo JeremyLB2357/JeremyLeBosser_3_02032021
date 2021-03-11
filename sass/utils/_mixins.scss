@@ -53,3 +53,7 @@
     top: $position;
     opacity: 1;
 }
+
+@mixin animation-plat($delay: 0s) {
+    animation: presentation-plat $presentation-plat__duration $delay backwards;
+}
