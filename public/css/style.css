@@ -85,6 +85,11 @@ html {
   font-size: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .icone {
   display: inline-block;
   margin-right: 0.5rem;
@@ -99,6 +104,17 @@ html {
 }
 .icone--couleur-primaire {
   color: #9356DC;
+}
+
+.icone__retour {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.icone__retour i {
+  position: relative;
+  top: 25%;
 }
 
 .btn {
@@ -200,12 +216,21 @@ html {
   position: absolute;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
 header .logo {
+  grid-column-start: 2;
   text-align: center;
   font-size: 2rem;
   line-height: 4rem;
   margin-top: 0;
   margin-bottom: 0;
+}
+header a {
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 footer {
@@ -226,6 +251,9 @@ footer li {
   list-style: none;
   margin-bottom: 0.5rem;
 }
+footer a {
+  color: white;
+}
 
 .carte__photo {
   width: 100%;
@@ -238,6 +266,11 @@ footer li {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.container_nom-restaurant {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
 
 .nom-restaurant {

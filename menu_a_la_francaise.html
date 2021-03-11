@@ -11,12 +11,24 @@
 <body>
     <header>
         <p class="logo">ohmyfood</p>
+        <a href="index.html">
+            <span class="icone icone__retour"><i class="fas fa-arrow-left"></i></span>
+        </a>
     </header>
     <main>
         <div class="carte__photo"><img src="./public/images/a_la_francaise.jpg" alt="Photo d'un plat" /></div>
         
         <section class="menu"> 
-            <h1 class="nom-restaurant">À la française</h1>   
+            <div class="container_nom-restaurant">
+                <h1 class="nom-restaurant">À la française</h1>
+                <button class="btn-heart">
+                <span class="fa-stack fa-2x heart-global">
+                    <i class="far fa-heart fa-stack-2x heart-border"></i>
+                    <i class="fas fa-heart fa-stack-1x heart-background"></i>
+                </span>
+            </button>  
+            </div>
+            
             <div class="list-menu list-1">    
                 <h2 class="menu__titre">ENTRÉES</h2>
                 <div class="plat">
@@ -97,7 +109,7 @@
                 <span>Devenir partenaire</span>
             </li>
             <li>Mentions légales</li>
-            <li>Contact</li>
+            <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
         </ul>
     </footer>
 </body>
