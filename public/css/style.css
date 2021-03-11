@@ -255,35 +255,80 @@ footer li {
 
 .plat {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-row-gap: 0.2rem;
   background-color: white;
-  padding: 0.8rem 0 0.5rem 0.5rem;
+  padding: 0rem 0 0rem 0.5rem;
   box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
+  overflow: hidden;
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
-.plat__titre, .plat__texte, .plat__prix {
+.plat__titre {
   margin-bottom: 0rem;
+  margin-top: 0.8rem;
+}
+.plat__texte, .plat__prix {
+  margin-bottom: 0.5rem;
   margin-top: 0rem;
 }
 .plat__prix {
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-row-start: 2;
   text-align: center;
   font-family: Roboto-bold;
 }
 .plat__texte {
-  grid-column: 1/span 2;
+  grid-column-start: 1;
   grid-row-start: 2;
   font-size: 0.9rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plat__icone {
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-row: 1/span 2;
   margin: auto;
+}
+.plat__prix {
+  transform: translate(0);
+  transition: transform 1s;
+}
+.plat__texte {
+  width: 100%;
+  transition: width 1s;
+}
+.plat__icone {
+  background-color: #99E2D0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 0 1rem 1rem 0;
+  transform: translate(100%);
+  transition: transform 1s;
+  z-index: 1;
+}
+.plat__icone i {
+  transform: rotate(360deg);
+  transition: transform 1s;
+  position: relative;
+  top: 25%;
+  color: white;
+}
+.plat:hover .plat__texte, .plat:active .plat__texte {
+  width: 75%;
+}
+.plat:hover .plat__icone, .plat:active .plat__icone {
+  transform: translate(0);
+}
+.plat:hover .plat__prix, .plat:active .plat__prix {
+  transform: translate(-100%);
+}
+.plat:hover i, .plat:active i {
+  transform: rotate(0);
 }
 
 .list-menu {
@@ -406,32 +451,37 @@ footer li {
 
 .restaurant {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-row-gap: 0.2rem;
   background-color: white;
-  padding: 0.8rem 0 0.5rem 0.5rem;
+  padding: 0rem 0 0rem 0.5rem;
   box-shadow: 0.2rem 0.2rem 0.2rem #bebebe;
   border-radius: 0 0 1rem 1rem;
 }
-.restaurant__titre, .restaurant__texte, .restaurant__prix {
+.restaurant__titre {
   margin-bottom: 0rem;
+  margin-top: 0.8rem;
+}
+.restaurant__texte, .restaurant__prix {
+  margin-bottom: 0.5rem;
   margin-top: 0rem;
 }
 .restaurant__prix {
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-row-start: 2;
   text-align: center;
   font-family: Roboto-bold;
 }
 .restaurant__texte {
-  grid-column: 1/span 2;
+  grid-column-start: 1;
   grid-row-start: 2;
   font-size: 0.9rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .restaurant__icone {
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-row: 1/span 2;
   margin: auto;
 }
