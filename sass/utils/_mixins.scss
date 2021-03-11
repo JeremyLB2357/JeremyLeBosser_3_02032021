@@ -39,7 +39,17 @@
         margin: auto;
     }
 }
-/* fonction à ajouter pour les menus
-margin-bottom: 1rem;
-border-radius: 1rem;
-*/
+
+@mixin loader-animation($animation: spin1, $color: $couleur-primaire, $size: 20vmin, $position) {
+    animation: $animation 3s linear forwards;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: $color;
+    border-top-color: $color;
+    box-sizing: border-box;
+    height: $size;
+    width: $size;
+    left: $position;
+    top: $position;
+    opacity: 1;
+}
