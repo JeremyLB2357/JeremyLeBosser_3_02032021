@@ -7,11 +7,49 @@
     color: white;
     background-color: $couleur-primaire;
     padding: 0 1.5rem 0 1.5rem;
-    font-family: Roboto-regular;
-    box-shadow: inset 0.5rem 1rem 3rem $couleur-secondaire, 0.2rem 0.2rem 0.2rem rgb(190, 190, 190);
+    box-shadow: inset 0.5rem 1rem 3rem $couleur-secondaire, 0.2rem 0.2rem 0.2rem $couleur-boxshadow;
+    transition: all 500ms;
+
+    &:hover {
+        background-color: lighten($couleur-primaire, 5%);
+        box-shadow: inset 0.5rem 1rem 3rem lighten($couleur-secondaire, 5%), 0.2rem 0.2rem 0.2rem darken($couleur-boxshadow, 20%);
+    }
 }
 
 .btn__commander {
     text-align: center;
     padding-bottom: 5rem;
+}
+
+.btn-heart {
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    outline: unset;     /*supprimer les bordures lors du click*/
+
+    .heart-global {
+        font-size: 1.2rem;
+    }
+    .heart-border {
+        color: black;
+        font-size: 1.5rem;
+        position: relative;
+        top: 0.2rem;
+        transition: opacity 0.5s;
+        opacity: 1;
+    }
+    .heart-background {
+        color: $couleur-primaire;
+        font-size: 1.5rem;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    &:hover, &:focus {
+        .heart-border {
+            opacity: 0;
+        }
+        .heart-background {
+            opacity: 1;
+        }
+    }
 }

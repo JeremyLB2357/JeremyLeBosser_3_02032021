@@ -2,11 +2,13 @@
 @import "./utils/variables";
 /*fonctions*/
 @import "./utils/mixins";
+@import "./utils/keyframes";
 /*placeholders*/
 @import "./base/body";
 @import "./base/typographie";
 @import "./components/icones";
 @import "./components/boutons";
+@import "./components/loader";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/carte-restaurant";

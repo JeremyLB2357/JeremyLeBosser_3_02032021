@@ -10,6 +10,11 @@
         height: 100%;
     }
 }
+
+.container_nom-restaurant {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
 .nom-restaurant {
     margin-left: $menu-vertical-align;
 }
@@ -18,7 +23,6 @@
     background-color: $section-bg-color;
     border-radius: 2rem 2rem 0 0;
     
-
     &__titre {
         margin-left: $menu-vertical-align;
     }
@@ -26,6 +30,24 @@
 
 .plat {
     @include structure-plat;
+    @include selection-plat;
     margin-bottom: 1rem;
     border-radius: 1rem;
 }
+
+.list-menu {
+    margin-top: 2rem;
+}
+
+@for $i from 1 through 3 {
+    .list-#{$i} {
+        $delay: $i * 2s;
+        $delay-plat: $delay + 1s;
+        @include animation-plat($delay);
+
+        .plat {
+            @include animation-plat($delay-plat);
+        }
+    }
+}
+

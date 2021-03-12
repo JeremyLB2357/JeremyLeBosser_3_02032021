@@ -1,9 +1,18 @@
 header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
     .logo {
+        grid-column-start: 2;
         text-align: center;
         font-size: 2rem;
         line-height: 4rem;
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    a {
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 }

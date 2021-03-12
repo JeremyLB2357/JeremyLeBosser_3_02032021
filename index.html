@@ -10,6 +10,7 @@
 <body>
     <header>
         <p class="logo">ohmyfood</p>
+        <div class="loader"></div>
     </header>
     <main>
         <section class="bloc-description"> <!--explorer nos restaurants -->
@@ -40,36 +41,73 @@
         <section class="bloc-restaurant">   <!--restaurants-->
             <h1>Restaurants</h1>
             <div class="restaurant__container">
-                <img class="restaurant__photo" src="public/images/la_palette_du_gout.jpg" alt="Photo d'un plat" />
+                <a href="menu_a_la_francaise.html">
+                    <img class="restaurant__photo" src="public/images/la_palette_du_gout.jpg" alt="Photo d'un plat" />
+                </a>
                 <div class="restaurant">    
-                    <h2 class="restaurant__titre">La palette du goût</h2>
-                    <span class="restaurant__icone"><i class="far fa-heart fa-lg"></i></span>
+                    <a href="menu_a_la_francaise.html">
+                        <h2 class="restaurant__titre">La palette du goût</h2>
+                    </a>
+                    <button class="restaurant__icone btn-heart">
+                        <span class="fa-stack fa-2x heart-global">
+                            <i class="far fa-heart fa-stack-2x heart-border"></i>
+                            <i class="fas fa-heart fa-stack-1x heart-background"></i>
+                        </span>
+                    </button>
                     <p class="restaurant__texte">Ménilmontant</p>
                 </div>
                 <div class="tag_nouveau">Nouveau</div>
+                
             </div>
             <div class="restaurant__container">
-                <img class="restaurant__photo" src="public/images/la_note_enchantee.jpg" alt="Photo d'un plat" />
+                <a href="menu_a_la_francaise.html">
+                    <img class="restaurant__photo" src="public/images/la_note_enchantee.jpg" alt="Photo d'un plat" />
+                </a>
                 <div class="restaurant">    
-                    <h2 class="restaurant__titre">La note enchantée</h2>
-                    <span class="restaurant__icone"><i class="far fa-heart fa-lg"></i></span>
+                    <a href="menu_a_la_francaise.html">
+                        <h2 class="restaurant__titre">La note enchantée</h2>
+                    </a>
+                    <button class="restaurant__icone btn-heart">
+                        <span class="fa-stack fa-2x heart-global">
+                            <i class="far fa-heart fa-stack-2x heart-border"></i>
+                            <i class="fas fa-heart fa-stack-1x heart-background"></i>
+                        </span>
+                    </button>
                     <p class="restaurant__texte">Charonne</p>
                 </div>
                 <div class="tag_nouveau">Nouveau</div>
             </div>
             <div class="restaurant__container">
-                <img class="restaurant__photo" src="public/images/a_la_francaise.jpg" alt="Photo d'un plat" />
+                <a href="menu_a_la_francaise.html">
+                    <img class="restaurant__photo" src="public/images/a_la_francaise.jpg" alt="Photo d'un plat" />
+                </a>
                 <div class="restaurant">    
-                    <h2 class="restaurant__titre">À la française</h2>
-                    <span class="restaurant__icone"><i class="far fa-heart fa-lg"></i></span>
+                    <a href="menu_a_la_francaise.html">
+                        <h2 class="restaurant__titre">À la française</h2>
+                    </a>
+                    <button class="restaurant__icone btn-heart">
+                        <span class="fa-stack fa-2x heart-global">
+                            <i class="far fa-heart fa-stack-2x heart-border"></i>
+                            <i class="fas fa-heart fa-stack-1x heart-background"></i>
+                        </span>
+                    </button>
                     <p class="restaurant__texte">Cité Rouge</p>
                 </div>
             </div>
             <div class="restaurant__container">
-                <img class="restaurant__photo" src="public/images/le_delice_des_sens.jpg" alt="Photo d'un plat" />
+                <a href="menu_a_la_francaise.html">
+                    <img class="restaurant__photo" src="public/images/le_delice_des_sens.jpg" alt="Photo d'un plat" />
+                </a>
                 <div class="restaurant">    
-                    <h2 class="restaurant__titre">Le délice des sens</h2>
-                    <span class="restaurant__icone"><i class="far fa-heart fa-lg"></i></span>
+                    <a href="menu_a_la_francaise.html">
+                        <h2 class="restaurant__titre">Le délice des sens</h2>
+                    </a>
+                    <button class="restaurant__icone btn-heart">
+                        <span class="fa-stack fa-2x heart-global">
+                            <i class="far fa-heart fa-stack-2x heart-border"></i>
+                            <i class="fas fa-heart fa-stack-1x heart-background"></i>
+                        </span>
+                    </button>
                     <p class="restaurant__texte">Folie-Méricourt</p>
                 </div>
             </div>
@@ -87,7 +125,7 @@
                 <span>Devenir partenaire</span>
             </li>
             <li>Mentions légales</li>
-            <li>Contact</li>
+            <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
         </ul>
     </footer>
 </body>
