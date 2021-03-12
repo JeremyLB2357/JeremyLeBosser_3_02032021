@@ -4,6 +4,10 @@
 
 @mixin alignement-gen {
     padding-left: 1rem;
+    @media (min-width: 992px) {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
 }
 
 @mixin structure-plat {

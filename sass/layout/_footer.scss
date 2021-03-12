@@ -1,12 +1,14 @@
 footer {
     background-color: $footer-bg-color;
     color: white;
-    padding: 1rem 0 2rem 1rem;
+    @include alignement-gen;
     margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 
     .logo {
         font-weight: inherit;
-        margin-top: 0rem;
+        margin-top: 0;
         margin-bottom: 1rem;
     }
 

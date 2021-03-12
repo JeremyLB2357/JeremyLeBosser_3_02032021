@@ -30,7 +30,6 @@
 }
 
 .bloc-fonctionnement {
-    width: 100%;
     @include alignement-gen;
     padding-bottom: $section-margintop;
 
@@ -43,6 +42,11 @@
         list-style: none;
         counter-reset: li;
         padding-left: $fonctionnement-counter-size/2;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 576px) {
+            align-items: center;
+        }
         
 
         li::before {
@@ -85,12 +89,24 @@
     h1 {
         margin-top: $section-margintop;
     }
+    .test {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+            max-height: 600px;
+        }
+        @media (min-width: 576px) {
+            align-items: center;
+        }
+    }
     .restaurant__container {
         margin-bottom: 1rem;
         border-radius: 1rem;
         margin-right: 1rem;
         background-color: white;
         position: relative;
+        max-width: 350px;
     }
 
     .restaurant__photo {
@@ -107,15 +123,4 @@
     &__titre {
         font-size: 1rem;
     }
-}
-.tag_nouveau {
-    background-color: #99E2D0;
-    color: #2b806c;
-    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-    position: absolute;
-    top: 1rem;
-    left: 15rem;
-    font-family: roboto-bold;
-    font-size: 0.9rem;
-    border-radius: 0.2rem;
 }

@@ -216,6 +216,18 @@ a {
   position: absolute;
 }
 
+.tag_nouveau {
+  background-color: #99E2D0;
+  color: #2b806c;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  position: absolute;
+  top: 5%;
+  left: 73%;
+  font-family: roboto-bold;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -236,12 +248,20 @@ header a {
 footer {
   background-color: #353535;
   color: white;
-  padding: 1rem 0 2rem 1rem;
+  padding-left: 1rem;
   margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  footer {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 footer .logo {
   font-weight: inherit;
-  margin-top: 0rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 footer ul {
@@ -418,9 +438,14 @@ footer a {
 }
 
 .bloc-fonctionnement {
-  width: 100%;
   padding-left: 1rem;
   padding-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .bloc-fonctionnement {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 .bloc-fonctionnement h1 {
   margin-top: 3rem;
@@ -430,6 +455,13 @@ footer a {
   list-style: none;
   counter-reset: li;
   padding-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .bloc-fonctionnement ol {
+    align-items: center;
+  }
 }
 .bloc-fonctionnement ol li::before {
   content: counter(li);
@@ -465,8 +497,29 @@ footer a {
   background-color: #EFEFEF;
   padding-bottom: 3rem;
 }
+@media (min-width: 992px) {
+  .bloc-restaurant {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
 .bloc-restaurant h1 {
   margin-top: 3rem;
+}
+.bloc-restaurant .test {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .bloc-restaurant .test {
+    max-height: 600px;
+  }
+}
+@media (min-width: 576px) {
+  .bloc-restaurant .test {
+    align-items: center;
+  }
 }
 .bloc-restaurant .restaurant__container {
   margin-bottom: 1rem;
@@ -474,6 +527,7 @@ footer a {
   margin-right: 1rem;
   background-color: white;
   position: relative;
+  max-width: 350px;
 }
 .bloc-restaurant .restaurant__photo {
   object-fit: cover;
@@ -522,18 +576,6 @@ footer a {
 }
 .restaurant__titre {
   font-size: 1rem;
-}
-
-.tag_nouveau {
-  background-color: #99E2D0;
-  color: #2b806c;
-  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-  position: absolute;
-  top: 1rem;
-  left: 15rem;
-  font-family: roboto-bold;
-  font-size: 0.9rem;
-  border-radius: 0.2rem;
 }
 
 /*fin de l'importation des partiels sass*/
