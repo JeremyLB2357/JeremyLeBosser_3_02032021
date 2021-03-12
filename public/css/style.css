@@ -292,6 +292,15 @@ footer a {
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
+@media (min-width: 576px) {
+  .container_nom-restaurant {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .container_nom-restaurant .nom-restaurant {
+    grid-column-start: 2;
+    text-align: center;
+  }
+}
 
 .nom-restaurant {
   margin-left: 0.5rem;
@@ -387,6 +396,16 @@ footer a {
 
 .list-menu {
   margin-top: 2rem;
+}
+@media (min-width: 576px) {
+  .list-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-menu .plat {
+    width: 500px;
+  }
 }
 
 .list-1 {
