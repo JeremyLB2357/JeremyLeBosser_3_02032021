@@ -300,6 +300,7 @@ footer a {
 .plat__titre {
   margin-bottom: 0rem;
   margin-top: 0.8rem;
+  width: 90%;
 }
 .plat__texte, .plat__prix {
   margin-bottom: 0.5rem;
@@ -494,6 +495,7 @@ footer a {
 .restaurant__titre {
   margin-bottom: 0rem;
   margin-top: 0.8rem;
+  width: 90%;
 }
 .restaurant__texte, .restaurant__prix {
   margin-bottom: 0.5rem;
