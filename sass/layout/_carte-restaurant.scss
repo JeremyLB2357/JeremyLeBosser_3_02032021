@@ -59,7 +59,7 @@
 
 @for $i from 1 through 3 {
     .list-#{$i} {
-        $delay: $i * 2s;
+        $delay: ($i - 0.5) * 2s;
         $delay-plat: $delay + 1s;
         @include animation-plat($delay);
 

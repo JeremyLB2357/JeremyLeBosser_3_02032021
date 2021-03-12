@@ -423,24 +423,24 @@ footer a {
 }
 
 .list-1 {
-  animation: presentation-plat 2s 2s backwards;
+  animation: presentation-plat 2s 1s backwards;
 }
 .list-1 .plat {
-  animation: presentation-plat 2s 3s backwards;
+  animation: presentation-plat 2s 2s backwards;
 }
 
 .list-2 {
-  animation: presentation-plat 2s 4s backwards;
+  animation: presentation-plat 2s 3s backwards;
 }
 .list-2 .plat {
-  animation: presentation-plat 2s 5s backwards;
+  animation: presentation-plat 2s 4s backwards;
 }
 
 .list-3 {
-  animation: presentation-plat 2s 6s backwards;
+  animation: presentation-plat 2s 5s backwards;
 }
 .list-3 .plat {
-  animation: presentation-plat 2s 7s backwards;
+  animation: presentation-plat 2s 6s backwards;
 }
 
 .bloc-description {
