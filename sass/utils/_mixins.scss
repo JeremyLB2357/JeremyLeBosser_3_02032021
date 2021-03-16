@@ -4,6 +4,10 @@
 
 @mixin alignement-gen {
     padding-left: 1rem;
+    @media (min-width: 992px) {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
 }
 
 @mixin structure-plat {
@@ -13,10 +17,12 @@
     background-color: white;
     padding: 0rem 0 0rem 0.5rem;
     @include box-shadow;
+    cursor: pointer;
 
     &__titre{
         margin-bottom: 0rem;
         margin-top: 0.8rem;
+        width: 90%;
     }
     &__texte, &__prix {
         margin-bottom: 0.5rem;
@@ -44,8 +50,8 @@
     }
 }
 
-@mixin loader-animation($animation: spin1, $color: $couleur-primaire, $size: 20vmin, $position) {
-    animation: $animation 3s linear forwards;
+@mixin loader-animation($animation: spin-1, $color: $couleur-primaire, $size: 20vmin, $position) {
+    animation: $animation $loader-duration linear forwards;
     border: solid 2vmin transparent;
     border-radius: 50%;
     border-right-color: $color;

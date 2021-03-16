@@ -1,4 +1,15 @@
-@keyframes spin1 {
+@keyframes chargement-page {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes spin-1 {
     80% {
         opacity: 1;
     }
@@ -7,7 +18,7 @@
         opacity: 0;
     }
 }
-@keyframes spin2 {
+@keyframes spin-2 {
     90% {
         opacity: 1;
     }
@@ -16,7 +27,7 @@
         opacity: 0;
     }
 }
-@keyframes spin3 {
+@keyframes spin-3 {
     95% {
         opacity: 1;
     }

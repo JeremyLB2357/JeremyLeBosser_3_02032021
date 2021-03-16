@@ -1,17 +1,20 @@
 .loader {
-    @include loader-animation($animation: spin1, $position:calc(50% - 10vmin));
+    @include loader-animation(spin-1, $position:calc(50% - 10vmin));
     position:fixed;
     z-index:1;
     
     &:before {
-        @include loader-animation($animation: spin2, $color: $couleur-secondaire, $size: 16vmin, $position: 0);
+        @include loader-animation(spin-2, $couleur-secondaire, $size: 16vmin, $position: 0);
         content:"";
         position:absolute;
     }
     &:after {
-        @include loader-animation($animation: spin3, $color: $couleur-tertiaire, $size: 12vmin, $position: 2vmin);
+        @include loader-animation(spin-3, $couleur-tertiaire, $size: 12vmin, $position: 2vmin);
         content:"";
         position:absolute;
     }
 }
   
+main {
+    animation: chargement-page $loader-duration linear both;
+}

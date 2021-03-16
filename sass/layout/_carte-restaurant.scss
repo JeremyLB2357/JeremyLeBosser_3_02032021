@@ -14,6 +14,15 @@
 .container_nom-restaurant {
     display: grid;
     grid-template-columns: 4fr 1fr;
+
+    @media (min-width: 576px) {
+        grid-template-columns: 1fr 3fr 1fr;
+
+        .nom-restaurant {
+            grid-column-start: 2;
+            text-align: center;
+        }
+    }
 }
 .nom-restaurant {
     margin-left: $menu-vertical-align;
@@ -33,15 +42,24 @@
     @include selection-plat;
     margin-bottom: 1rem;
     border-radius: 1rem;
+
 }
 
 .list-menu {
     margin-top: 2rem;
+    @media (min-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .plat {
+            width: 500px;
+        }
+    }
 }
-
+/*ci-dessous l'animation d'apparition des plat*/
 @for $i from 1 through 3 {
     .list-#{$i} {
-        $delay: $i * 2s;
+        $delay: ($i - 0.5) * 2s - 0.5s;
         $delay-plat: $delay + 1s;
         @include animation-plat($delay);
 
