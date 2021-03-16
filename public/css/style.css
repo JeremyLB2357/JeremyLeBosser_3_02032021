@@ -1,5 +1,16 @@
 /*importation de tous les partiels sass*/
 /*fonctions*/
+@keyframes chargement-page {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes spin-1 {
   80% {
     opacity: 1;
@@ -218,6 +229,10 @@ a {
   position: absolute;
 }
 
+main {
+  animation: chargement-page 3s linear both;
+}
+
 .tag_nouveau {
   background-color: #99E2D0;
   color: #1b6150;
@@ -424,25 +439,26 @@ footer a {
   }
 }
 
+/*ci-dessous l'animation d'apparition des plat*/
 .list-1 {
-  animation: presentation-plat 2s 1s backwards;
+  animation: presentation-plat 2s 0.5s backwards;
 }
 .list-1 .plat {
-  animation: presentation-plat 2s 2s backwards;
+  animation: presentation-plat 2s 1.5s backwards;
 }
 
 .list-2 {
-  animation: presentation-plat 2s 3s backwards;
+  animation: presentation-plat 2s 2.5s backwards;
 }
 .list-2 .plat {
-  animation: presentation-plat 2s 4s backwards;
+  animation: presentation-plat 2s 3.5s backwards;
 }
 
 .list-3 {
-  animation: presentation-plat 2s 5s backwards;
+  animation: presentation-plat 2s 4.5s backwards;
 }
 .list-3 .plat {
-  animation: presentation-plat 2s 6s backwards;
+  animation: presentation-plat 2s 5.5s backwards;
 }
 
 .bloc-description {

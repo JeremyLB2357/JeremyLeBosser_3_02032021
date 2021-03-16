@@ -56,10 +56,10 @@
         }
     }
 }
-
+/*ci-dessous l'animation d'apparition des plat*/
 @for $i from 1 through 3 {
     .list-#{$i} {
-        $delay: ($i - 0.5) * 2s;
+        $delay: ($i - 0.5) * 2s - 0.5s;
         $delay-plat: $delay + 1s;
         @include animation-plat($delay);
 

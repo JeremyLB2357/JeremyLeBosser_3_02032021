@@ -51,7 +51,7 @@
 }
 
 @mixin loader-animation($animation: spin-1, $color: $couleur-primaire, $size: 20vmin, $position) {
-    animation: $animation 3s linear forwards;
+    animation: $animation $loader-duration linear forwards;
     border: solid 2vmin transparent;
     border-radius: 50%;
     border-right-color: $color;
