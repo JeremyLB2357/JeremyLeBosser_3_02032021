@@ -1,11 +1,10 @@
 .tag_nouveau {
-    background-color: #99E2D0;
-    color: #2b806c;
+    background-color: $couleur-tertiaire;
+    color: darken($couleur-tertiaire, 50%);
     padding: 0.3rem 0.6rem 0.3rem 0.6rem;
     position: absolute;
     top: 5%;
     left: 73%;
-    font-family: roboto-bold;
     font-size: 0.9rem;
     border-radius: 0.2rem;
 }

@@ -3,7 +3,7 @@
     flex-direction: column;
 
     .localisation {
-        background-color: #EAEAEA;
+        background-color: darken($section-bg-color, 10%);
         line-height: 3rem;
         text-align: center;
         color: $footer-bg-color;
