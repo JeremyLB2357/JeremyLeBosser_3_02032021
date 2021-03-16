@@ -17,14 +17,17 @@
         background-color: $section-bg-color;
         text-align: center;
         padding-bottom: $section-margintop;
+        align-items: center;
 
         .description__titre {
-            margin: $section-margintop 4rem 0 4rem;
+            margin-top: $section-margintop;
+            max-width: 70%;
         }
 
         .description__texte {
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
+            max-width: 90%;
         }
     }
 }
@@ -71,6 +74,9 @@
             width: 19rem;
             border-radius: 1rem;
             @include box-shadow;
+        }
+        li:last-child {
+            background-color: transparentize($color: $couleur-primaire, $amount: 0.8);
         }
     }
 

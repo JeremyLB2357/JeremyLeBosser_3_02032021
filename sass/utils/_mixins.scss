@@ -17,6 +17,7 @@
     background-color: white;
     padding: 0rem 0 0rem 0.5rem;
     @include box-shadow;
+    cursor: pointer;
 
     &__titre{
         margin-bottom: 0rem;
