@@ -34,6 +34,13 @@
     
     &__titre {
         margin-left: $menu-vertical-align;
+        margin-bottom: 1rem;
+    }
+    .title-underligne {
+        width: 40px;
+        height: 3px;
+        background-color: $couleur-tertiaire;
+        margin-top: 0.2rem;
     }
 }
 
