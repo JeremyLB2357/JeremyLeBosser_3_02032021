@@ -334,13 +334,14 @@ footer a {
 }
 .menu__titre {
   margin-left: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 .menu .title-underligne {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
-  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .plat {
